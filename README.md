@@ -1,5 +1,6 @@
 # WheelMenu
 android custom widget
+support android version: over android 2.3
 
 Demo
 ![Demo](https://github.com/LYLLucien/WheelMenu/blob/master/readme/WheelMenuDemo.gif)
