@@ -253,14 +253,6 @@ public class WheelMenu extends View {
              */
             centre = viewWidth / 2; //central coordinate
             int radius = (int) (centre - roundWidth / 2); //radius
-//            paint.setColor(Color.CYAN); //set ring color
-//            paint.setStyle(Paint.Style.STROKE); //set stroke
-//            paint.setStrokeWidth(roundWidth); //set ring width
-//            paint.setAntiAlias(true);  //anti-alias
-//            paint.setDither(true);
-//            paint.setShadowLayer(viewWidth / 2, 0, 0, Color.GRAY);
-//            bmpCanvas.drawCircle(centre, centre, radius, paint); //draw ring
-//
 
             oval = new RectF(centre - radius, centre - radius, centre
                     + radius, centre + radius);  //define shape, size and bound
@@ -276,23 +268,8 @@ public class WheelMenu extends View {
 
             drawButton(225, 90, topButtonColors, topButtonPosition, null);
 
-//            drawCentralButtons();
-
         }
     }
-
-//    Bitmap middleBitmap;
-
-//    private void drawCentralButtons() {
-//
-//        int radius = centre / 2;
-//        if ((icBottomBitmap == null || icBottomBitmap.isRecycled()))
-//            middleBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.btn_wheel_menu_middle);
-//        RectF centralOval = new RectF(centre - radius, centre - radius, centre
-//                + radius, centre + radius);
-//
-//        bmpCanvas.drawBitmap(middleBitmap, centre - radius, centre - radius, null);
-//    }
 
     /**
      * draw button by start angle and degree
@@ -653,21 +630,21 @@ public class WheelMenu extends View {
         this.rightTextColor = rightTextColor;
     }
 
-//    public void setResIconTop(int icTopDrawable) {
-//        this.icTopDrawable = icTopDrawable;
-//    }
-//
-//    public void setResIconLeft(int icLeftDrawable) {
-//        this.icLeftDrawable = icLeftDrawable;
-//    }
-//
-//    public void setResIconBottom(int icBottomDrawable) {
-//        this.icBottomDrawable = icBottomDrawable;
-//    }
-//
-//    public void setResIconRight(int icRightDrawable) {
-//        this.icRightDrawable = icRightDrawable;
-//    }
+    public void setIcRightDrawable(Drawable icRightDrawable) {
+        this.icRightDrawable = icRightDrawable;
+    }
+
+    public void setIcBottomDrawable(Drawable icBottomDrawable) {
+        this.icBottomDrawable = icBottomDrawable;
+    }
+
+    public void setIcLeftDrawable(Drawable icLeftDrawable) {
+        this.icLeftDrawable = icLeftDrawable;
+    }
+
+    public void setIcTopDrawable(Drawable icTopDrawable) {
+        this.icTopDrawable = icTopDrawable;
+    }
 
     public void setTopButtonShadow(int topButtonShadow) {
         this.topButtonShadow = topButtonShadow;
