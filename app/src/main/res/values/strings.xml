@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WheelMenu</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_right">RightActivity</string>
+    <string name="title_activity_left">LeftActivity</string>
+    <string name="title_activity_top">TopActivity</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+</resources>
